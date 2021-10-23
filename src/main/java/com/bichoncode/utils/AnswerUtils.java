@@ -77,7 +77,8 @@ public class AnswerUtils {
             string = string.replaceAll(" +", "");
             string = string.replaceAll("\uFEFF", "");
             String TEXT=string.split("[:]")[0];
-            exerciseMap.put(Integer.valueOf(string.split("[:]")[0]), string.split(":")[1].split("=")[1]);
+            System.out.println(string);
+            exerciseMap.put(Integer.valueOf(string.split("[:]")[0]), string.split(":")[1]);
         }
         while ((string = answerReader.readLine()) != null) {
             string = string.replaceAll(" +", "");
