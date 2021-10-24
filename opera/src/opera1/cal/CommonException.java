@@ -1,10 +1,6 @@
-package com.bichoncode.exception;
+package cal;
 
-/**
- * 通用异常处理类
- * @author ChenYan
- */
-public class CommonException extends RuntimeException {
+public class CommonException  extends RuntimeException {
     private String message;
 
     public CommonException(String message) {
