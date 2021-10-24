@@ -88,7 +88,7 @@ public class export {
 				String num=TEXT.split("]")[0];
 				exerciseMap.put(Integer.valueOf(num), string.split("]")[1].split("=")[1]);
 			}catch(ArrayIndexOutOfBoundsException e){
-				System.out.println("练习答案输入格式有误");
+//				System.out.println("练习答案输入格式有误");
 			}
 		}
 		while ((string = answerReader.readLine()) != null) {
@@ -99,7 +99,7 @@ public class export {
 				String num=TEXT.split("]")[0];
 				answerMap.put(Integer.valueOf(num), string.split("]")[1]);
 			}catch(ArrayIndexOutOfBoundsException e){
-				System.out.println("答案格式有误");
+//				System.out.println("答案格式有误");
 			}
 		}
 		exerciseReader.close();
