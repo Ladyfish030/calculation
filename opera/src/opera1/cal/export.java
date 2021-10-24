@@ -61,32 +61,6 @@ public class export {
 		return Answer1;
       }
 
-//	对比答案
-//	public  static StringBuffer  duibi (ArrayList<String> A , ArrayList<String> B) {
-//		StringBuffer Right = new StringBuffer(); //存正确的题号
-//		StringBuffer Fault = new StringBuffer();//存错误的题号
-//		StringBuffer Daan = new StringBuffer();//存错误的题号
-//		int r = 0;
-//		int f = 0;
-//		int j = 0;
-//		for(String i :  A) {
-//			if ((A.get(j).compareTo(B.get(j)) == 0)){
-//				r = r + 1;
-//				Right.append(j+1 + ",");
-//				}
-//			else {
-//				f = f + 1;
-//				Fault.append(j+1 + ",");
-//			}
-//			j++;
-//		}
-//		Daan.append("Correct:" + r +  "(" + Right + ")" + System.getProperty("line.separator"));
-//		Daan.append("Wrong:" + f + "(" + Fault + ")");
-//		System.out.println("Correct:" + r +  "(" + Right + ")");
-//		System.out.println("Wrong:" + f + "(" + Fault + ")");
-//		return Daan;
-//    	}
-
 	public static void compare(File answerFile, File exerciseFile) throws IOException {
 		if (!exerciseFile.exists()) {
 			throw new CommonException("练习答案文件不存在");
