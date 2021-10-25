@@ -62,6 +62,7 @@ public class export {
       }
 
 	public static void compare(File answerFile, File exerciseFile) throws IOException {
+		//对练习答案进行批改
 		if (!exerciseFile.exists()) {
 			throw new CommonException("练习答案文件不存在");
 		}
